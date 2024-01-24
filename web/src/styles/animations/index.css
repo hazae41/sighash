@@ -1,0 +1,82 @@
+@layer utilities {
+  .animate-opacity-in {
+    animation: opacity-in 300ms ease;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 300ms ease;
+  }
+
+  .animate-slideup-in {
+    animation: slideup-in 300ms ease;
+  }
+
+  .animate-opacity-scale-in {
+    animation: opacity-in 300ms ease, scale 300ms ease;
+  }
+
+  @keyframes opacity-in {
+    from {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      transform: scale(0%);
+    }
+  }
+
+  @keyframes slideup-in {
+    from {
+      transform: translateY(calc(100vh));
+    }
+  }
+
+  .animate-opacity-out {
+    animation: opacity-out 300ms ease;
+  }
+
+  .animate-scale-out {
+    animation: scale-out 300ms ease;
+  }
+
+  .animate-slideup-out {
+    animation: slideup-out 300ms ease;
+  }
+
+  .animate-opacity-scale-out {
+    animation: opacity-out 300ms ease, scale 300ms ease;
+  }
+
+  @keyframes opacity-out {
+    to {
+      opacity: 0%;
+    }
+  }
+
+  @keyframes scale-out {
+    to {
+      transform: scale(0%);
+    }
+  }
+
+  @keyframes slideup-out {
+    to {
+      transform: translateY(calc(100vh));
+    }
+  }
+
+  .animate-vibrate-loop {
+    animation: vibrate-loop 125ms ease-in-out infinite alternate;
+  }
+
+  @keyframes vibrate-loop {
+    from {
+      transform: rotate(-1deg);
+    }
+    to {
+      transform: rotate(1deg);
+    }
+  }
+}

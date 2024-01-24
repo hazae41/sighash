@@ -1,0 +1,6 @@
+[profile.default]
+src = "src"
+out = "out"
+solc-version = "0.8.20"  # most rollups don't support past this - https://twitter.com/pashovkrum/status/1690298101448208384?s=46
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

@@ -1,0 +1,16 @@
+/**
+ * Padding oblong
+ **/
+@layer utilities {
+  .po-sm {
+    @apply px-2 py-1;
+  }
+
+  .po-md {
+    @apply px-4 py-2;
+  }
+
+  .po-lg {
+    @apply px-8 py-4;
+  }
+}

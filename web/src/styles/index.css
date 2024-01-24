@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './padding/index.css';
+@import './margin/index.css';
+@import './animations/index.css';
+@import './background/index.css';
+@import './text/index.css';
+@import './border/index.css';
+@import './outline/index.css';
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  font-family: ui-rounded, system-ui, sans-serif;
+}
+
+html {
+  @apply w-full flex flex-col;
+}
+
+body {
+  @apply grow h-dvh w-full flex flex-col text-base text-default bg-default overflow-hidden;
+}
+
+#__next {
+  @apply grow w-full flex flex-col overflow-hidden;
+}

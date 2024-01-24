@@ -1,0 +1,19 @@
+{
+  "name": "governance",
+  "version": "1.0.0",
+  "description": "A simple governance contract",
+  "scripts": {
+    "dev": "remixd -s .",
+    "clean": "rm -rf cache out",
+    "build": "forge build",
+    "test": "forge test",
+    "test:coverage": "forge coverage",
+    "test:coverage:report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage"
+  },
+  "devDependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@remix-project/remixd": "^0.6.20",
+    "ds-test": "github:dapphub/ds-test",
+    "forge-std": "github:foundry-rs/forge-std"
+  }
+}

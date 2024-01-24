@@ -1,0 +1,26 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: Database
+    network: gnosis
+    source:
+      address: "0xBB59B5Cc543746A16011BC011F4db742F918672F"
+      abi: Database
+      startBlock: 32008885
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Added
+      abis:
+        - name: Database
+          file: ./abis/Database.json
+      eventHandlers:
+        - event: Added(indexed bytes4,string)
+          handler: handleAdded
+      file: ./src/database.ts

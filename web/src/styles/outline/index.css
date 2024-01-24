@@ -1,0 +1,11 @@
+@layer utilities {
+  .outline-default {
+    @apply outline-white;
+    @apply dark:outline-black;
+  }
+
+  .outline-opposite {
+    @apply outline-black;
+    @apply dark:outline-white;
+  }
+}

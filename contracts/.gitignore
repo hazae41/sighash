@@ -1,0 +1,8 @@
+node_modules/
+
+.deps/
+artifacts/
+
+# Compiler files
+cache/
+out/

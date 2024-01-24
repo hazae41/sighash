@@ -1,0 +1,14 @@
+type Global @entity {
+  id: ID!
+  count: BigInt!
+}
+
+type Added @entity(immutable: true) {
+  id: Bytes!
+  no: BigInt!
+  hash: Bytes! # bytes4
+  text: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

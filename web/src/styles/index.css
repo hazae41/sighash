@@ -20,13 +20,13 @@ body {
 }
 
 html {
-  @apply w-full flex flex-col;
+  @apply h-full w-full;
 }
 
 body {
-  @apply grow h-dvh w-full flex flex-col text-base text-default bg-default overflow-hidden;
+  @apply h-full w-full text-base text-default bg-default overflow-hidden;
 }
 
 #__next {
-  @apply grow w-full flex flex-col overflow-hidden;
+  @apply h-full w-full overflow-hidden;
 }
